@@ -5,6 +5,11 @@ Originally from Python Crash Course 3rd Ed.
 #### Dependencies:
 
 `
-python -m pip install --user pygame
+sudo apt install python3-pip
+python -m pip install virtualenv
+python -m virtualenv venv
+source venv/bin/activate
+
+python -m pip install pygame
 `
 
