@@ -1,14 +1,12 @@
-#!/usr/bin/env python
-
-""" Building a game named ALien Invasion!
-"""
 import sys
+
 import pygame
 
 from settings import Settings
 from ship import Ship
 from bullet import Bullet
 from alien import Alien
+
 
 class AlienInvasion:
     ''' Overall class to manage game assets and behavior.'''
@@ -106,7 +104,7 @@ class AlienInvasion:
     def _change_fleet_direction(self):
         '''Drop the entire felet and change the fleet's direction.'''
         for alien in self.aliens.sprites():
-            alien.rect.y =+ self.settings.fleet_drop_speed
+            alien.rect.y += self.settings.fleet_drop_speed
         self.settings.fleet_direction *= -1
 
     def _create_fleet(self):
@@ -135,6 +133,7 @@ class AlienInvasion:
         self.aliens.draw(self.screen)
         # Make the most recently drawn screen visible.
         pygame.display.flip()
+
 
 if __name__ == '__main__':
     # Make a game instance, and run the game.
