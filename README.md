@@ -1,6 +1,7 @@
 # Alien Invasion
 By Jasen Carroll
 Originally from Python Crash Course 3rd Ed.
+Credit: Eric Matthes
 
 #### Dependencies:
 
